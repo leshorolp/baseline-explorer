@@ -1,0 +1,15 @@
+{
+  "name": "interactive-baseline-explorer",
+  "version": "1.0.0",
+  "description": "A retro-styled explorer for Baseline web features",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "web-features": "^0.0.15"
+  },
+  "keywords": ["baseline", "web", "features", "compatibility"],
+  "author": "Your Name",
+  "license": "MIT"
+}

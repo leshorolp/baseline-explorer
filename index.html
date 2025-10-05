@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Baseline Explorer - A trustworthy guide for web developers to check which web features are universally supported">
+    <meta name="keywords" content="baseline, web features, compatibility, HTML, CSS, JavaScript, API, web development">
+    <title>Interactive Baseline Explorer | Check Web Feature Compatibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-shape"></div>
+                <h1>Baseline Explorer</h1>
+            </div>
+            <p class="tagline">Your guide to universally supported web features</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="controls">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search features..." class="search-input">
+                    <div class="search-icon">🔍</div>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="html">HTML</button>
+                            <button class="filter-btn" data-filter="css">CSS</button>
+                            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                            <button class="filter-btn" data-filter="api">API</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Status</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-status="all">All</button>
+                            <button class="filter-btn" data-status="baseline">Baseline Only</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-features">0</div>
+                    <div class="stat-label">Total Features</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="baseline-features">0</div>
+                    <div class="stat-label">Baseline</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="html-features">0</div>
+                    <div class="stat-label">HTML</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="css-features">0</div>
+                    <div class="stat-label">CSS</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="js-features">0</div>
+                    <div class="stat-label">JavaScript</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="api-features">0</div>
+                    <div class="stat-label">API</div>
+                </div>
+            </section>
+            
+            <section class="features-grid" id="features-container">
+                <!-- Feature cards will be inserted here by JavaScript -->
+                <div class="loading">Loading web features...</div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built with 💻 and ☕ for the Baseline Tooling Hackathon</p>
+            <p>Data sourced from the <a href="https://github.com/web-platform-dx/web-features" target="_blank">web-features</a> package</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,9 +6,7 @@
   "scripts": {
     "start": "npx serve ."
   },
-  "dependencies": {
-    "web-features": "^0.0.15"
-  },
+  "dependencies": {},
   "keywords": ["baseline", "web", "features", "compatibility"],
   "author": "Your Name",
   "license": "MIT"
